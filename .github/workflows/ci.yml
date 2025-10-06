@@ -4,7 +4,7 @@ on:
   pull_request:
 
 jobs:
-  build_test_security:
+  build_test:
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -25,7 +25,7 @@ jobs:
 
       - name: Run Unit Tests
         run: npm test
-        
+
       - name: npm audit (fail on HIGH)
         run: npm audit --audit-level=high
 
