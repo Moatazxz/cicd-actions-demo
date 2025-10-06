@@ -25,3 +25,4 @@ jobs:
         run: npm test
       - name: npm audit (fail on HIGH)
         run: npm audit --audit-level=high
+        
